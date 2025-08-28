@@ -92,11 +92,11 @@ static const Layout layouts[] = {
 #define STATUSBAR "dwmblocks"
 /* commands */
 static const char *launchercmd[] = { "rofi", "-show", "drun", NULL };
-static const char *termcmd[]     = { "ghostty", NULL };
+static const char *termcmd[]     = { "kitty", NULL };
 
 static Key keys[] = {
     /* modifier                     key                        function        argument */
-    { MODKEY,                       XK_r,                      spawn,          {.v = launchercmd} },
+    { MODKEY,                       XK_d,                      spawn,          {.v = launchercmd} },
     { MODKEY|ControlMask,           XK_r,                      spawn,          SHCMD ("protonrestart")},
     { MODKEY,                       XK_x,                      spawn,          {.v = termcmd } },
     { MODKEY,                       XK_b,                      spawn,          SHCMD ("xdg-open https://")},
@@ -117,7 +117,7 @@ static Key keys[] = {
     { MODKEY|ShiftMask,             XK_j,                      movestack,      {.i = +1 } },
     { MODKEY|ShiftMask,             XK_k,                      movestack,      {.i = -1 } },
     { MODKEY,                       XK_i,                      incnmaster,     {.i = +1 } },
-    { MODKEY,                       XK_d,                      incnmaster,     {.i = -1 } },
+    { MODKEY,                       XK_a,                      incnmaster,     {.i = -1 } },
     { MODKEY,                       XK_h,                      setmfact,       {.f = -0.05} },
     { MODKEY,                       XK_l,                      setmfact,       {.f = +0.05} },
     { MODKEY|ShiftMask,             XK_h,                      setcfact,       {.f = +0.25} },
