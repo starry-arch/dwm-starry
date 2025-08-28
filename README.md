@@ -123,5 +123,5 @@ sudo make install
 - If you do not use a login manager then you already know what you are doing. Add `exec dwm` at the end of your `~/.xinitrc` file.
 
 > [!TIP]
-> - By default new terminals are opened by using the keyboard shortcut of <kbd>SUPER</kbd> + <kbd>X</kbd> while rofi is started using <kbd>SUPER</kbd>+<kbd>R</kbd>
+> - By default new terminals are opened by using the keyboard shortcut of <kbd>SUPER</kbd> + <kbd>X</kbd> while rofi is started using <kbd>SUPER</kbd>+<kbd>D</kbd>
 > - Check `config.h` for the keybindings, and change them according to your preference.
